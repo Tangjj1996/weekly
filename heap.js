@@ -55,3 +55,5 @@ class MinHeap {
         return samllest;
     }
 }
+
+export default MinHeap
