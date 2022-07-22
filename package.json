@@ -6,7 +6,8 @@
   "scripts": {
     "test": "vitest",
     "converage": "vitest run --coverage",
-    "check::format": "prettier --check '**/*.{md,js,jsx,ts,tsx}'"
+    "check::format": "prettier --check '**/*.{md,js,jsx,ts,tsx}'",
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
@@ -24,7 +25,7 @@
   "license": "ISC",
   "devDependencies": {
     "c8": "^7.11.3",
-    "husky": "^8.0.1",
+    "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "vitest": "^0.18.1"
