@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest",
-    "converage": "vitest run --coverage"
+    "converage": "vitest run --coverage",
+    "format": "prettier --write '**/*.{md, js, jsx, ts, tsx}'"
   },
   "husky": {
     "hooks": {
@@ -25,6 +26,7 @@
     "c8": "^7.11.3",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
     "vitest": "^0.18.1"
   }
 }
