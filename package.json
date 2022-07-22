@@ -7,11 +7,24 @@
     "test": "vitest",
     "converage": "vitest run --coverage"
   },
+  "husky": {
+    "hooks": {
+      "pre-commint": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{md, js, ts, jsx, tsx, json}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "c8": "^7.11.3",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "vitest": "^0.18.1"
   }
 }
