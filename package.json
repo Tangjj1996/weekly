@@ -6,7 +6,7 @@
   "scripts": {
     "test": "vitest",
     "converage": "vitest run --coverage",
-    "format": "prettier --write '**/*.{md, js, jsx, ts, tsx}'"
+    "check::format": "prettier --check '**/*.{md,js,jsx,ts,tsx}'"
   },
   "husky": {
     "hooks": {
@@ -14,8 +14,8 @@
     }
   },
   "lint-staged": {
-    "*.{md, js, ts, jsx, tsx, json}": [
-      "prettier --write '**/*.{md, js, jsx, ts, tsx}'",
+    "*.{js,json,md,tsx,ts}": [
+      "prettier --write",
       "git add"
     ]
   },
